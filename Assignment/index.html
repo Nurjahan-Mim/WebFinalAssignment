@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="sidebar">
+            <h2>Inventory</h2>
+            <ul>
+                <li onclick="showDashboard()"><i class="fas fa-home"></i> Dashboard</li>
+                <li onclick="showSection('Category')"><i class="fas fa-list"></i> Category</li>
+                <li onclick="showSection('Warehouse')"><i class="fas fa-warehouse"></i> Warehouse</li>
+                <li onclick="showSection('Elements')"><i class="fas fa-cubes"></i> Elements</li>
+                <li onclick="showProducts()"><i class="fas fa-box"></i> Products</li>
+                <li onclick="showSection('Orders')"><i class="fas fa-shopping-cart"></i> Orders</li>
+                <li onclick="showSection('Members')"><i class="fas fa-users"></i> Members</li>
+                <li onclick="showSection('Permission')"><i class="fas fa-user-shield"></i> Permission</li>
+                <li onclick="showSection('Company')"><i class="fas fa-building"></i> Company</li>
+                <li class="logout"><i class="fas fa-sign-out-alt"></i> Logout</li>
+            </ul>
+        </div>
+
+        
+        <div class="main-content">
+            <h2 id="page-title">Dashboard</h2>
+            <div id="content">
+               
+                <div class="dashboard">
+                    <div class="card purple">
+                        <h3>6</h3>
+                        <p>Total Items</p>
+                    </div>
+                    <div class="card blue">
+                        <h3>8</h3>
+                        <p>Total Category</p>
+                    </div>
+                    <div class="card orange">
+                        <h3>2</h3>
+                        <p>Total Elements</p>
+                    </div>
+                    <div class="card green">
+                        <h3>8225.77</h3>
+                        <p>Total Sales</p>
+                    </div>
+                    <div class="card dark-blue">
+                        <h3>5</h3>
+                        <p>Paid Orders</p>
+                    </div>
+                    <div class="card red">
+                        <h3>1</h3>
+                        <p>Unpaid Orders</p>
+                    </div>
+                    <div class="card teal">
+                        <h3>2</h3>
+                        <p>Total Members</p>
+                    </div>
+                    <div class="card brown">
+                        <h3>2</h3>
+                        <p>Total Warehouse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
